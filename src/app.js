@@ -5,6 +5,7 @@ const geocode = require('./Utils/geocode')
 const forecast = require('./Utils/forecast')
 
 const app = express()
+const port = process.env.PORT || 3000       // for heroku as port will be set dynamically
 
 const publicDir = path.join(__dirname,'../public')
 const viewsPath = path.join(__dirname,'../template/views')
@@ -93,6 +94,6 @@ app.get('*',(req,res)=>{
 
 // Uses one time to make the server up
 
-app.listen(3000,()=>{
-    console.log('Sever started..')
+app.listen(port,()=>{
+    console.log('Sever is up at port'+port) 
 })
