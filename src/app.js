@@ -33,8 +33,8 @@ app.get('/about',(req,res)=>{
 
 app.get('/help',(req,res)=>{
     res.render('help',{
-        helpText: 'This is help text',
-        title: 'HELP',
+        helpText: 'Contact: atsidharth@gmail.com',
+        title: 'Help',
         name: 'Sid'
     })
 })
@@ -60,18 +60,6 @@ app.get('/weather',(req,res)=>{
             })
         })
     })
-})
-
-app.get('/products',(req,res)=>{
-    if(!req.query.search){
-        return res.send({
-            error: 'Add a search string'
-        })
-    }
-    res.send({
-        products:[]
-    })
-    console.log(req.query.search)
 })
 
 

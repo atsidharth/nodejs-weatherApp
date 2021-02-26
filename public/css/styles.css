@@ -1,5 +1,9 @@
 body {
     background:lavender;
+    background-image: url('/images/pic2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     color: #333333;
     font-family: Arial, Helvetica, sans-serif;
     max-width: 650px;
@@ -12,11 +16,12 @@ body {
 }
 .main-content {
     flex-grow: 1;
+    text-align: center;
 }
 
 footer {
     color: #888888;
-    border-top:1px solid #eeeeee ;
+    border-top: 1px solid rgb(116, 126, 139) ;
     margin-top: 16px;
     padding: 16px 0;
     text-align: center;
@@ -30,17 +35,19 @@ h1 {
     margin-bottom: 16px;
 }
 header a{
-    color: #888888;
+    color: lightgray;
     margin-right: 16px;
     text-decoration: none;
 }
 .portrait {
-    width: 250px;
+    width: 150px;
+    padding: 50px;
 }
 
 input{
     border: 1px solid #cccccc;
     padding: 8px;
+    text-align: center;     
 }
 
 button{
@@ -52,6 +59,17 @@ button{
 }
 
 #wlcm-msg{
-    color:lightslategrey;
-    
+    padding-top: 40px;
+    color:white;   
+    text-align: center; 
 }
+
+#about-text{
+    text-shadow: #888888;
+    text-align: center;
+    padding-bottom: 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+}
+
