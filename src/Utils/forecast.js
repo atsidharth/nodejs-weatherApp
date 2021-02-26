@@ -10,7 +10,8 @@ const forecast = (lattitude,longitude,callback) =>{
             callback('Location not found...',undefined)
         }else{
             const current = body.current
-            callback(undefined,current.weather_descriptions+'. It is currently '+current.temperature+' degrees out. It feels like '+current.feelslike)
+            console.log(current)
+            callback(undefined,current.weather_descriptions+'. It is currently '+current.temperature+' degrees out and feels like '+current.feelslike+'. There is '+current.precip+'% chance of rain.')
         }
     })
 }

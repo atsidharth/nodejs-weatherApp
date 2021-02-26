@@ -37,7 +37,7 @@ app.get('/help',(req,res)=>{
         title: 'Help',
         name: 'Sid'
     })
-})
+}) 
 
 app.get('/weather',(req,res)=>{
     if(!req.query.address){

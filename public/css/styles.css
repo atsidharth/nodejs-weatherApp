@@ -37,7 +37,7 @@ h1 {
 header a{
     color: lightgray;
     margin-right: 16px;
-    text-decoration: none;
+    text-decoration: none; 
 }
 .portrait {
     width: 150px;
@@ -71,5 +71,9 @@ button{
     border: 2px solid white;
     border-radius: 10px;
     box-shadow: 1px 1px 10px black;
+}
+
+#msg-1, #msg-2 {
+    color: lightsteelblue;
 }
 
