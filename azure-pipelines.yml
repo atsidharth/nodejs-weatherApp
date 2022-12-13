@@ -10,8 +10,8 @@ pool:
   vmImage: ubuntu-latest
 
 container:
-  image:  cxservice/gitlab/pipeline-test:latest
-  endpoint: iad.ocir.io
+  image:  iad.ocir.io/cxservice/gitlab/pipeline-test:latest
+  
 
 steps:
 
