@@ -9,13 +9,14 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+container:
+  image:  cxservice/gitlab/pipeline-test:latest
+  endpoint: iad.ocir.io
+
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
 
 - script: |
-    npm install
-    npm run build
-  displayName: 'npm install and build'
+    cat /etc/os-release
+    lsb_release -a
+    hostnamectl
+  displayName: 'Checking OS'
